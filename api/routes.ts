@@ -1,8 +1,8 @@
 import { RouterContext } from "https://deno.land/x/oak@v5.0.0/mod.ts";
 import { hashSync, compareSync } from "https://deno.land/x/bcrypt@v0.2.1/mod.ts";
 import { makeJwt, setExpiration, Jose } from "https://deno.land/x/djwt@v0.9.0/create.ts";
-import { users, User } from './users.ts';
-import { favs } from './favs.ts'
+import { users, User } from './users.js';
+import { favs } from './favs.js'
 
 
 const header: Jose = {

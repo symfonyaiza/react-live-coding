@@ -3,15 +3,15 @@ import { oakCors } from "https://deno.land/x/cors/mod.ts"
 import "https://deno.land/x/dotenv@v0.4.1/load.ts"
 import * as flags from 'https://deno.land/std/flags/mod.ts'
 
-import { userMiddleware } from "./userMiddleware.ts"
-import { authMiddleware } from "./authMiddleware.ts"
+import { userMiddleware } from "./userMiddleware.js"
+import { authMiddleware } from "./authMiddleware.js"
 import {
   getFavs,
   deleteFav,
   postFav,
   postLogin,
   postRegister
-} from "./routes.ts"
+} from "./routes.js"
 
 const {args} = Deno
 
